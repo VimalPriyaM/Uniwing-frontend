@@ -1,0 +1,455 @@
+/* General Container Styles */
+.event-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    margin-left: 140px;
+    
+  }
+
+ .leftbar2 {
+  
+  margin-left: 5px;
+  height: 100vh; /* Full vertical height */
+  width: 40px; /* Sidebar width */
+  transition: width 0.3s ease;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  margin-top: 20px !important;
+}
+
+.leftbar2 {
+  border: none; /* Remove invalid 'linear-gradient' from border */
+}
+
+
+
+  
+  /* Button to create a new event */
+  .btn-create-event {
+    background-color: #1C3655;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    margin-left: 30px;
+  }
+  
+  .btn-create-event:hover {
+    background-color: #154172; /* Darker shade on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Event Card Styles */
+  .event-card {
+    margin-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: red;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card-body {
+    padding: 20px;
+    /* display:flex;
+    flex-direction: row; */
+  }
+  
+  .event-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1C3655;
+  }
+  
+  .event-card-body button {
+    background-color: #1C3655;
+    color: white;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .event-card-body button:hover {
+    background-color: #154172;
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styling */
+  .event-modal .modal-content {
+    border-radius: 12px;
+  }
+  
+  .event-modal .modal-header {
+    background-color: #1C3655;
+    color: white;
+  }
+  
+  .event-modal .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .event-modal .modal-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 14px;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #1C3655;
+  }
+  
+  .form-input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Description Styling */
+  .event-description {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Spinner Centering */
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-left: 20px !important;
+  }
+  
+  /* Text Button Styles */
+  .bt1 {
+    color: #1C3655;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-left: 70px;
+  }
+  
+  .bt1:hover {
+    color: #154172;
+  }
+  
+  /* Card Actions */
+  .event-card-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event-card-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1C3655;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .event-card-actions button:hover {
+    background-color:  #1C3655;
+    transform: scale(1.05);
+  }
+
+  /* Styling for the custom button */
+/* Styling for the custom button */
+.subbt {
+    color: white !important; /* Force text color */
+    background-color: #154172 !important; /* Force background color */
+    border: none !important; /* Remove border */
+    padding: 10px 20px; /* Adjust padding for better sizing */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect */
+  .subbt:hover {
+    background-color: #1C3655 !important; /* Darker background on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .event-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    .btn-create-event {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+   
+  }
+  @media (max-width: 576px) {
+  .leftbar2 {
+    width: 100px;
+    height: auto; /* Remove fixed height */
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding:0px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  .btn-create-event{
+    margin-top: 50px;
+  }
+
+  .event-card{
+    margin-left: 0px;
+  }
+}
+  .custom-select-container {
+    position: relative;
+  }
+  
+  .custom-select {
+    padding-right: 10px; /* Add padding to the right to make space for the arrow */
+  }
+  
+  .select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Disable pointer events on the arrow to allow interaction with the select */
+  }
+  
+  
+  .nav-link {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Optionally, you can also target hover and active states */
+  .nav-link:hover,
+  .nav-link:active {
+    color: inherit; /* Keep the color unchanged on hover or active */
+    text-decoration: none;
+  }
+  /* Apply a gradient or background image to the entire page */
+.back{
+  background: linear-gradient(135deg, #12344D, #764ba2); /* Updated gradient theme */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Apply your desired font */
+  position: fix;
+}
+
+.event-container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.8); /* Add transparency for the card container */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the left bar styling if necessary */
+
+
+/* Adjust spacing and alignment for the main content */
+.event-card {
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9); /* Ensure cards stand out */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-modal .modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the buttons and text contrast against the background */
+.btn-create-event {
+  background-color: #12344D; /* Updated color to match the new theme */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+}
+
+
+
+/* Custom submit button */
+.subbt {
+  background-color: #764ba2; /* Updated button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.subbt:hover {
+  background-color: #12344D; /* Hover color in the gradient theme */
+  transform: scale(1.05);
+}
+
+.d2{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 1;
+  transform: translateX(0);
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 30px;
+  margin-left: 25px;
+  position: relative;
+  z-index: 101;
+}
+.d2::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) translateX(10px);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.d2:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.d2:hover .dashicon {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
+}
+
+/* Loader Container */
+.loader-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#12344D, #764ba2);
+}
+
+/* Loader Styles */
+.loader {
+  width: 16em;
+  height: 8em;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
+
+.loader::before {
+  width: inherit;
+  height: 0.2em;
+  background-color: hsla(0, 0%, 85%);
+}
+
+.loader::after {
+  box-sizing: border-box;
+  width: 50%;
+  height: inherit;
+  border: 0.2em solid hsla(0, 0%, 85%);
+  border-radius: 50%;
+  left: 25%;
+}
+
+.loader span {
+  position: absolute;
+  width: 5%;
+  height: 10%;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 0.2em;
+  left: -5%;
+  animation: 2s linear infinite;
+  transform-origin: 50% -3em;
+  animation-name: run, rotating;
+}
+
+.loader span:nth-child(2) { animation-delay: 0.075s; }
+.loader span:nth-child(3) { animation-delay: 0.15s; }
+
+@keyframes run {
+  0% { left: -5%; }
+  10%, 60% { left: calc((100% - 5%) / 2); }
+  70%, 100% { left: 100%; }
+}
+
+@keyframes rotating {
+  0%, 10% { transform: rotate(0deg); }
+  60%, 100% { transform: rotate(-1turn); }
+}
+
+/* Dashboard Content (Assuming a white background) */
+.dashboard {
+  background: white; /* White or your desired background for the dashboard */
+  color: #333;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}

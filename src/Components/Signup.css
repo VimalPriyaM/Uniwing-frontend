@@ -1,0 +1,330 @@
+
+.signup_two-color-card {
+  width: 100%; 
+  height: auto; 
+  background: linear-gradient(to bottom, #1C3655 50%, #e9ebede8 50%);
+  opacity: 0.9;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+/* Style for the card */
+.signup_card {
+     
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-top:60px;
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Style for the title */
+  .signup_title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:normal;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the form */
+  .signup_form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* name */
+  .signup_name {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-decoration: dotted;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_name::placeholder {
+    color: black;
+  }
+  
+  .signup_name:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* college */
+  .signup_college {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_college::placeholder {
+    color: black;
+  }
+  
+  .signup_college:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* department */
+  .signup_department {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-decoration: dotted;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_department::placeholder {
+    color: black;
+  }
+  
+  .signup_department:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* mobile */
+  .signup_mobile {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_mobile::placeholder {
+    color: black;
+  }
+  
+  .signup_mobile:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* gender */
+  .signup_gender {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_gender::placeholder {
+    color: black;
+  }
+  
+  .signup_gender:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* email */
+  .signup_email {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_email::placeholder {
+    color: black;
+  }
+  
+  .signup_email:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* password */
+  .signup_password {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #919ba375;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-weight: bolder;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .signup_password::placeholder {
+    color: black;
+  }
+  
+  .signup_password:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  
+  /* confirm-password */
+  .signup_confirm-password {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .signup_confirm-password::placeholder {
+    color: black;
+  }
+  
+  .signup_confirm-password:focus {
+    outline: none;
+    border: 2px solid #154172;
+    box-shadow: 0 2px 8px #4081af;
+  }
+  .signup_password-toggle {
+  background: none;
+  cursor: pointer;
+  margin-left: -30px;
+  
+}
+  /* Error message  */
+  .signup_message {
+    color: rgb(236, 47, 47);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px; 
+  }
+  
+  
+  /* Submit button styling */
+  .signup_button1 {
+    margin-top: 5px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px; 
+    color: #ffffff;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .signup_button1:hover {
+    background-color:#154172;
+  }
+
+  
+ /* Tablet view adjustments (max-width: 766px) */
+@media (max-width: 766px) {
+  .signup_two-color-card {
+    height: auto; 
+    min-height: 600px; 
+    padding: 15px; 
+    margin: 10px; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .signup_title {
+    font-size: 18px; 
+  }
+
+  .signup_name,
+  .signup_college,
+  .signup_department,
+  .signup_mobile,
+  .signup_gender,
+  .signup_email,
+  .signup_password,
+  .signup_confirm-password,
+  .signup_button1 {
+    font-size: 14px; /* Consistent input size for smaller screens */
+  }
+}
+
+/* Mobile view adjustments (max-width: 481px) */
+@media (max-width: 481px) {
+  .signup_two-color-card {
+    min-height: 500px; /* Reduces height further for small screens */
+    padding: 10px; /* Further reduces padding */
+    margin: 5px; /* Tightens outer margins */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .signup_title {
+    font-size: 16px; /* Smaller font for titles */
+  }
+
+  .signup_name,
+  .signup_college,
+  .signup_department,
+  .signup_mobile,
+  .signup_gender,
+  .signup_email,
+  .signup_password,
+  .signup_confirm-password,
+  .signup_button1 {
+    font-size: 12px; /* Smaller input font size */
+  }
+
+  .signup_form-group {
+    margin-bottom: 8px; /* Reduces spacing between form fields */
+  }
+
+  .signup_password-container {
+    flex-direction: column; /* Stacks input and toggle icon vertically */
+    align-items: flex-start; /* Aligns items to the left */
+  }
+
+  .signup_password-toggle {
+    margin-top: 5px; /* Adjusts spacing for password toggle */
+    font-size: 14px; /* Adjusts toggle icon size */
+  }
+}

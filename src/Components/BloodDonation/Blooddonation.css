@@ -1,0 +1,162 @@
+.back2{
+    background: linear-gradient(135deg, #12344D, #764ba2); /* Updated gradient theme */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Apply your desired font */
+    position: fix;
+  }
+
+  .leftbar3{
+
+    padding: 100px;
+    height: 100 !important; /* Full height */
+    width: 40px; /* Sidebar width */
+    transition: width 0.3s ease;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: linear-gradient(135deg, #12344D, #764ba2);
+    margin-left: -30px;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black for sidebar */
+    height: 100vh;
+    padding-top: 20px;
+    margin-top: 20px !important;
+
+  }
+
+
+  .d3{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 1;
+    transform: translateX(0);
+    white-space: nowrap;
+    margin-left: 7px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 30px;
+    margin-left: 53px;
+    position: relative;
+    z-index: 101;
+  }
+  .d3::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) translateX(10px);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .d3:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .d3:hover .dashicon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+  }
+
+   /* Modal Styling */
+   .event-modal2 .modal-content {
+    border-radius: 12px;
+  }
+  
+  .event-modal2 .modal-header {
+    background-color: #1C3655;
+    color: white;
+  }
+  
+  .event-modal2 .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .event-modal2 .modal-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  @media (max-width: 768px) {
+   .leftbar3 {
+        width: 40px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding:20px;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+
+    .d3 {
+        font-size: 20px; /* Smaller font size for icons */
+        margin-left: 5px; /* Reduced margin */
+    }
+
+    .d3::after {
+        font-size: 9px; /* Further reduced tooltip font size */
+    }
+
+    .event-modal2 .modal-title {
+        font-size: 1rem; /* Smaller modal title for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .leftbar3 {
+        width: 40px;
+        height: 0px;
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        padding:20px;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+
+    .d3 {
+        font-size: 18px; /* Further reduced font size */
+        margin-left: 3px;
+    }
+
+    .d3::after {
+        font-size: 8px; /* Smallest tooltip font size */
+    }
+
+    .event-modal2 .modal-body {
+        padding: 10px; /* Reduced modal body padding */
+    }
+}
+
+
+@media (max-width: 756px) {
+  .leftbar2 {
+   flex-direction: row;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+}

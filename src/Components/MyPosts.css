@@ -1,0 +1,178 @@
+.my-posts-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.post-wrapper {
+  background-image: linear-gradient(135deg, #12344D, #764ba2);
+  min-height: 100vh;
+  padding: 10px;
+}
+/* Add Room Button */
+.my-posts-container .add-room-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  padding: 8px 12px;
+  background-color: #1C3655;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.my-posts-container .add-room-btn:hover {
+  background-color: #1a3f6b;
+}
+
+/* Heading */
+.my-posts-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #1C3655;
+}
+
+/* Cards Grid */
+.my-posts-container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Room Card */
+.my-posts-container .room-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  min-height: 250px;
+}
+
+.my-posts-container .room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title & Description */
+.my-posts-container .room-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+}
+
+.my-posts-container .room-card p {
+  margin: 10px 0;
+  padding-left: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Buttons container */
+.buttonclass {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Action Buttons */
+.my-posts-container .room-card button {
+  padding: 10px 16px;
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.my-posts-container .room-card button:hover {
+  background-color: #e0e0e0;
+}
+
+/* View Details Button */
+.my-posts-container .view-details-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1C3655;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.my-posts-container .view-details-btn:hover {
+  background-color: #1a3f6b;
+}
+
+/* Close buttons */
+.close-button,
+.close-button-icon {
+  color: red;
+  border: none;
+  background-color: transparent;
+  font-size: larger;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .my-posts-container .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .my-posts-container .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+    .post-wrapper{
+          padding: 20px;
+    }
+  .my-posts-container .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .my-posts-container h1 {
+    font-size: 22px;
+  }
+
+  .my-posts-container .add-room-btn {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .my-posts-container .room-card {
+    padding: 20px;
+  }
+
+  .my-posts-container .room-card button,
+  .my-posts-container .view-details-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+  }
+}

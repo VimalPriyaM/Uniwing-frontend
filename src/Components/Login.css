@@ -1,0 +1,173 @@
+/* Scoped Styles */
+.login-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+.login-column {
+  background-color: #1a3f6b;
+  display: flex;
+  align-items: center;      
+  justify-content: center;   
+  width: 90%;              
+  height: 90%;
+  border-radius: 20px;
+            
+}
+
+.login-container .login-box {
+    background-color: #ffffff;
+    padding: 32px; /* 2rem = 32px */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-container .logo {
+    width: 100px;
+    margin: 0 auto 16px; /* 1rem = 16px */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 24px; /* 1.5rem = 24px */
+    font-size: 24px; /* 1.5rem = 24px */
+    
+}
+
+.login-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    width: 80%;
+    padding: 12.8px; /* 0.8rem = 12.8px */
+    margin-bottom: 16px; /* 1rem = 16px */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; /* 1rem = 16px */
+
+}
+.login-container input:focus{
+    outline: none;
+    border:1px solid #1C3655
+}
+.login-container input:hover{
+    outline: none;
+    border:1px solid #1C3655
+}
+
+.login-container button {
+    width: 80%;
+    padding: 12.8px; /* 0.8rem = 12.8px */
+    background-color: #1C3655;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px; /* 1rem = 16px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:disabled {
+    background-color: #cccccc;
+}
+
+.login-container button:hover {
+    background-color:  #1a3f6b;
+}
+
+.login-container .error {
+    width: 80%;
+    color: red;
+    font-size: 14px; /* 0.875rem = 14px */
+    margin-top: -8px; /* -0.5rem = -8px */
+    margin-bottom: 16px; /* 1rem = 16px */
+    text-align: left;
+}
+
+.login-container .alternative-options {
+    margin: 16px 0; /* 1rem = 16px */
+    width: 80%;
+}
+
+.login-container .google-login {
+    width: 80%;
+    background-color:  #1C3655;
+    color: #ffffff;
+    padding: 12.8px; /* 0.8rem = 12.8px */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px; /* 1rem = 16px */
+    cursor: pointer;
+}
+
+.login-container .signup-link {
+    width: 80%;
+    text-align: center;
+    margin-top: 16px; /* 1rem = 16px */
+    font-size: 14px; /* 0.875rem = 14px */
+    color: #555;
+}
+
+.login-container .signup-link a {
+    color:#1a3f6b;
+    text-decoration: none;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .login-container .login-box {
+        padding: 24px; /* 1.5rem = 24px */
+        max-width: 90%;
+    }
+
+    .login-container h2 {
+        font-size: 20px; /* 1.25rem = 20px */
+    }
+
+    .login-container input,
+    .login-container button {
+        padding: 9.6px; /* 0.6rem = 9.6px */
+        font-size: 14.4px; /* 0.9rem = 14.4px */
+    }
+
+    .login-container .logo {
+        width: 80px;
+    }
+
+    .login-container .google-login {
+        padding: 9.6px; /* 0.6rem = 9.6px */
+        font-size: 14.4px; /* 0.9rem = 14.4px */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container h2 {
+        font-size: 17.6px; /* 1.1rem = 17.6px */
+    }
+
+    .login-container input,
+    .login-container button {
+        padding: 8px; /* 0.5rem = 8px */
+        font-size: 13.6px; /* 0.85rem = 13.6px */
+    }
+
+    .login-container .logo {
+        width: 60px;
+    }
+}
