@@ -23,7 +23,7 @@ const Vacancyform = () => {
     const fetchColleges = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/college/getallcolleges"
+          "https://uniwing-backend.onrender.com/api/college/getallcolleges"
         );
         setColleges(response.data); // Assuming response.data contains the college list
       } catch (error) {
@@ -61,7 +61,7 @@ const Vacancyform = () => {
       console.log("Submitting data: ", payload); // Debugging payload
 
       // Make the API call with authorization headers
-      const res =await axios.post("http://localhost:8080/api/room/create", payload, {
+      const res =await axios.post("https://uniwing-backend.onrender.com/api/room/create", payload, {
         headers: {
           Authorization: `Bearer ${token}`, // Pass token in Authorization header
         },

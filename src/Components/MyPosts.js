@@ -24,7 +24,7 @@ const MyPosts = () => {
     if (studentId && token) {
       const fetchRooms = async () => {
         try {
-          const response = await axios.get(`http://localhost:8080/api/room/getbyid/${studentId}`, {
+          const response = await axios.get(`https://uniwing-backend.onrender.com/api/room/getbyid/${studentId}`, {
             headers: {
               "Authorization": `Bearer ${token}`
             }
@@ -51,7 +51,7 @@ const MyPosts = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8080/api/room/updatestatus/${id}`,
+        `https://uniwing-backend.onrender.com/api/room/updatestatus/${id}`,
         { status: newStatus },
         {
           headers: {
@@ -87,7 +87,7 @@ const MyPosts = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/room/delete/${id}`, {
+      await axios.delete(`https://uniwing-backend.onrender.com/api/room/delete/${id}`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }
@@ -130,7 +130,7 @@ const MyPosts = () => {
     const fetchDonations = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/blooddonation/donationperson/${studentId}`,
+          `https://uniwing-backend.onrender.com/api/blooddonation/donationperson/${studentId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -161,7 +161,7 @@ const MyPosts = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:8080/api/blooddonation/donationstatus/${id}`,
+        `https://uniwing-backend.onrender.com/api/blooddonation/donationstatus/${id}`,
         { status: newStatus },
         {
           headers: {
@@ -198,7 +198,7 @@ const MyPosts = () => {
   //function to delete the donations 
   const deleterequest = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/blooddonation/deletedonation/${id}`, {
+      await axios.delete(`https://uniwing-backend.onrender.com/api/blooddonation/deletedonation/${id}`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }
@@ -237,7 +237,7 @@ const MyPosts = () => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/event/getbyid/${studentId}`,
+          `https://uniwing-backend.onrender.com/api/event/getbyid/${studentId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -270,7 +270,7 @@ const MyPosts = () => {
       }
 
       const response = await axios.post(
-        `http://localhost:8080/api/event/delete/${id}`
+        `https://uniwing-backend.onrender.com/api/event/delete/${id}`
       );
       if (response.status === 200) {
         Swal.fire("Success!", "Event Deleted Successfully", "success");
@@ -400,7 +400,7 @@ const MyPosts = () => {
                   variant="top"
                   src={
                     event.image
-                      ? `http://localhost:8080${event.image}`
+                      ? `https://uniwing-backend.onrender.com${event.image}`
                       : "/uploads/default.jpg"
                   }
                 />

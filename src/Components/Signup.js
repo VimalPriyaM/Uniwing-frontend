@@ -33,7 +33,7 @@ function Signup() {
     useEffect(() => {
         const fetchColleges = async () => {
             try {
-                const res = await axios.get('http://localhost:8080/api/college/getallcolleges');
+                const res = await axios.get('https://uniwing-backend.onrender.com/api/college/getallcolleges');
                 setCollegename(res.data);
             } catch (error) {
                 setMessage('Error fetching colleges: ' + error.message);
@@ -63,7 +63,7 @@ function Signup() {
         try {
             console.log('Submitting data:', values);
 
-            const response = await axios.post('http://localhost:8080/api/student/signup', values);
+            const response = await axios.post('https://uniwing-backend.onrender.com/api/student/signup', values);
 
             Swal.fire({
                 title: "Regustration Completed successfully",

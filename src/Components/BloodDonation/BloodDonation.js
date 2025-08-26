@@ -36,7 +36,7 @@ const id = sessionStorage.getItem("studentId")
   const fetchDonations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/blooddonation/alldonations"
+        "https://uniwing-backend.onrender.com/api/blooddonation/alldonations"
       );
       setDonation(response.data);
     } catch (error) {
@@ -48,7 +48,7 @@ const id = sessionStorage.getItem("studentId")
   const fetchColleges = async () => {
     try {
       const college = await axios.get(
-        "http://localhost:8080/api/college/getallcolleges"
+        "https://uniwing-backend.onrender.com/api/college/getallcolleges"
       );
       setColleges(college.data);
     } catch (error) {
@@ -75,7 +75,7 @@ const myposts = ()=>{
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/blooddonation/createdonation/${id}`,
+        `https://uniwing-backend.onrender.com/api/blooddonation/createdonation/${id}`,
         formData
       );
       console.log("Donation request submitted successfully.", response.data);

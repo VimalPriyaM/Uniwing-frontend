@@ -45,7 +45,7 @@ function Login() {
                 const formdata = { email: email.trim().toLowerCase(), password: password.trim() };
 
                 // Make API call
-                const response = await axios.post("http://localhost:8080/api/student/login", formdata);
+                const response = await axios.post("https://uniwing-backend.onrender.com/api/student/login", formdata);
 
                 console.log("API Response:", response.data);
                 

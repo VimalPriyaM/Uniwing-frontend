@@ -20,7 +20,7 @@ const Hostelvacc = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/room/getall", {
+        const response = await axios.get("https://uniwing-backend.onrender.com/api/room/getall", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

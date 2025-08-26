@@ -41,7 +41,7 @@ function Event() {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/event/getall"
+        "https://uniwing-backend.onrender.com/api/event/getall"
       );
       console.log(response.data.data);
       
@@ -58,7 +58,7 @@ function Event() {
   const fetchColleges = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/college/getallcolleges"
+        "https://uniwing-backend.onrender.com/api/college/getallcolleges"
       );
       setColleges(response.data || []); // Ensure colleges are set to an empty array if no data
     } catch (error) {
@@ -133,8 +133,8 @@ function Event() {
     const updatedEventData = { ...formData, college: collegeId };
 
     const apiEndpoint = isEdit
-      ? `http://localhost:8080/api/event/update/${currentEvent._id}`
-      : `http://localhost:8080/api/event/create/${id}`;
+      ? `https://uniwing-backend.onrender.com/api/event/update/${currentEvent._id}`
+      : `https://uniwing-backend.onrender.com/api/event/create/${id}`;
     const method = isEdit ? "put" : "post";
 
     try {
@@ -234,7 +234,7 @@ console.log("Sending data to API:", Object.fromEntries(formDataToSend.entries())
       }
 
       const response = await axios.post(
-        `http://localhost:8080/api/event/delete/${id}`
+        `https://uniwing-backend.onrender.com/api/event/delete/${id}`
       );
       if (response.status === 200) {
         Swal.fire("Success!", "Event Deleted Successfully", "success");
@@ -277,7 +277,10 @@ const myposts=()=>{
           <span className="d2" data-tooltip="Contact">
             <MdPermContactCalendar className="dashicon" />
           </span>
-          <span className="d2" onClick={myposts} data-tooltip="Find your posts here">
+          <span className="d2" onClick={myposts} data-tooltip="Find your posts here
+          
+          
+      ">
             <MdDynamicFeed className="dashicon" />
           </span>
           <span className="d2" data-tooltip="Help & Support">
@@ -301,7 +304,7 @@ const myposts=()=>{
                     variant="top"
                     src={
                       event.image
-                        ? `http://localhost:8080${event.image}`
+                        ? `https://uniwing-backend.onrender.com${event.image}`
                         : "/uploads/default.jpg"
                     }
                   />
