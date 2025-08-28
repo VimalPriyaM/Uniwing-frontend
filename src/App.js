@@ -17,11 +17,12 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login/>} />
+          <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Dashboard' element={<Dashboard/>}/>
         <Route path='/Event' element={<Event/>}/>
         <Route path='/EventForm' element={<EventForm/>}/>
         <Route path='/BloodDonation' element={<BloodDonation/>}></Route>
-        <Route path='/Signup' element={<Signup/>}/>
+      
         
                 
         <Route path="/Hostelvacc" element={<Hostelvacc/>} />
